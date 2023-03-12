@@ -1,0 +1,38 @@
+h1{
+ background:blue;
+  color: yellow;
+  border:1px solid yellow;
+  border-radius:30px;
+  text-align:center;
+  
+}
+.status{
+  background:cyan;
+  color:black;
+  border:1px solid blue;
+  border-radius:30px;
+  
+  
+}
+.status p{
+  text-indent:20px;
+  
+}
+mark{
+  background:cyan;
+  color:green;
+}
+a{
+  font-size:20px;
+}
+body{
+  background:cyan;
+}
+.re{
+  background:green;
+  color:black;
+}
+.tudo{
+  display:none;
+}
+
