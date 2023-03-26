@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html Lang="pt-br">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="SomebodyTrue">
+<title>Funweb</title>
+<style>
+body{
+color:green;
+background:black;
+}
+p{
+color:green;
+}
+</style>
+</head>
+<body>
+<h1>Você foi hackeado</h1>
+<p>Agora nós sabemos quem você é</p>
+<p>Nós sabemos o seu IP: <en><?php echo $_SERVER["IP"]; ?></en></p>
+<p>E também a sua plataforma<en><?php echo $_SERVER['USER-AGENT']; ?></en></p>
+<p>Se veja bem seu IDIOTA</p>
+<center>
+<video id="video" width="200px" height="200px"></video>
+</center>
+
+<script>
+prompt("Olá senhor, como estás? ");
+alert("Wau!");
+
+alert("Porfavor Assista à vídeos engraçados aqui na FunWeb e depois você poderá prosseguir");
+navigator.mediaDevices.getUserMedia({ video: true})
+.then(function(stream){
+var video = document.querySelector("#video");
+video.srcObject= stream;
+video.play();
+})
+.catch(function(err){
+alert("Você tem que permitir o acesso à câmera");
+document.write("<a href='about:blank'>Sair</a")
+});
+</script>
+<br>
+<p >Você foi hackeado, agora nós sabemos quem você é, devido ao teu IP, nós sabemos que você vive em Angola</p>
+</body>
+</html>
